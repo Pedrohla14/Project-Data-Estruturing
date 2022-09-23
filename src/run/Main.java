@@ -49,7 +49,7 @@ public class Main {
 			// Go through the equation list and do your operations
 			for (int i = 0; i < list.getSize(); i++) {
 				
-				if(finalList.getSize()>20) { 
+				if(finalList.getSize()>200) { 
 					System.out.println("A Pilha de cálculo chegou no limite! Espaço insuficiente.");
 					throw new Exception();
 				}
