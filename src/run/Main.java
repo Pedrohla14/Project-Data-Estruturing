@@ -58,7 +58,7 @@ public class Main {
 				String currentValue = list.get(i).getValue();
 				
 				if(finalList.getSize() < 2 && operators.contains(currentValue)) {
-					System.out.println("Erro na formatação dos dados!");
+					System.out.println("Foi encontrado um operador, mas não há dois números para realizar a operação.");
 					throw new Exception();
 				}
 
@@ -96,7 +96,7 @@ public class Main {
 				// Print of the final result of the equation
 				System.out.println(finalList.get(0).getValue());
 			} else {
-				System.out.println("Erro de sintaxe, verifique a equação");
+				System.out.println("Sobraram dois ou mais números na pilha de valores, mas não existem mais operadores para calcular com os dois números.");
 				throw new Exception();
 			}
 		} catch (Exception error) {
